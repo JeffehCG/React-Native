@@ -1,0 +1,8 @@
+// Criando um novo projeto
+npx react-native init NovoProjeto
+
+// Startar Projeto
+npx react-native start
+
+// Rodando projeto no Android
+npx react-native run-android
