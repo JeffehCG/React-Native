@@ -6,3 +6,6 @@ npx react-native start
 
 // Rodando projeto no Android
 npx react-native run-android
+
+//Material Icon Theme
+Plugin para icones personalizados das pastas
