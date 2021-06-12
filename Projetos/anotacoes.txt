@@ -9,3 +9,24 @@ npx react-native run-android
 
 //Material Icon Theme
 Plugin para icones personalizados das pastas
+
+//Documentacao React navigation
+https://reactnavigation.org/
+
+//Instalando React Navigation no projeto
+npm install @react-navigation/native
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+// Navegacao Stack
+npm install @react-navigation/stack
+
+// Navegacao Tabs
+npm install @react-navigation/bottom-tabs
+
+// Navegacao Drawar
+npm install @react-navigation/drawer
+
+// Adicionando icones
+npm install --save react-native-vector-icons
+npx react-native link react-native-vector-icons
+leia a documentacao - https://www.npmjs.com/package/react-native-vector-icons
