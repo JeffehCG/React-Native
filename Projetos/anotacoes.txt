@@ -30,3 +30,9 @@ npm install @react-navigation/drawer
 npm install --save react-native-vector-icons
 npx react-native link react-native-vector-icons
 leia a documentacao - https://www.npmjs.com/package/react-native-vector-icons
+
+// Utilizacao de conjunto de elementos vizuais react-native
+Documentacao - https://reactnativeelements.com/
+
+Instalando react elements
+npm install react-native-elements --save
