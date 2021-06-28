@@ -1,0 +1,15 @@
+-- Criar package.json
+npm init -y
+
+-- Baixar dependencias projeto
+npm i
+
+-- Iniciando projeto
+npm start
+
+-- Instale o Knex de forma global
+npm i knex@0.21.1 -g
+
+-- É preciso baixar o postgress para rodar esse projeto
+-- E tambem adicionar as configurações no banco no arquivo knexfile.js
+-- Tambem é preciso criar o arquivo .env
