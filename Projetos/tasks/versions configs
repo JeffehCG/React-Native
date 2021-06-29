@@ -1,0 +1,19 @@
+node - 12.14.0
+npm - 6.13.4
+
+-- Projeto legado
+No caminho node_modules\metro-config\src\defaults\blacklist.js alterar de 
+var sharedBlacklist = [
+  /node_modules[/\\]react[/\\]dist[/\\].*/,
+  /website\/node_modules\/.*/,
+  /heapCapture\/bundle\.js/,
+  /.*\/__tests__\/.*/
+];
+
+para 
+ var sharedBlacklist = [
+  /node_modules[\/\\]react[\/\\]dist[\/\\].*/,
+  /website\/node_modules\/.*/,
+  /heapCapture\/bundle\.js/,
+  /.*\/__tests__\/.*/
+];
