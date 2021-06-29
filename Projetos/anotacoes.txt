@@ -2,7 +2,7 @@
 npx react-native init NovoProjeto
 
 // Criando um projeto em uma versão especifica
-npx react-native init NovoProjeto --version 0.61.5
+npx react-native init tasks --version 0.61.5
 
 // Startar Projeto
 npx react-native start
