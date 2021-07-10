@@ -5,16 +5,46 @@
 		"prefix": "compfunc",
 		"body": [
 			"import React from 'react'",
-			"import { Text } from 'react-native'",
-			"import Estilo from './estilo'",
+			"import { View, Text, StyleSheet } from 'react-native'",
 			"",
 			"export default props => {",
 			"    return(",
-			"        <Text style={Estilo.txtG}>",
-			"            $1",
-			"        </Text>",
+			"        <View style={styles.container}>",
+			"            <Text>{$1}</Text>",
+			"        </View>",
 			"    )",
-			"}"
+			"}",
+			"",
+			"const styles = StyleSheet.create({",
+			"    container:{",
+			"        ",
+			"    }",
+			"})"
+		],
+		"description": "Log output to console"
+	},
+	"Componente Classe": {
+		"scope": "javascript",
+		"prefix": "compclass",
+		"body": [
+			"import React, { Component } from 'react'",
+			"import { Text, View, StyleSheet } from 'react-native'",
+			"",
+			"export default class $1 extends Component {",
+			"    render() {",
+			"        return (",
+			"            <View style={styles.container}>",
+			"                <Text> $2 </Text>",
+			"            </View>",
+			"        )",
+			"    }",
+			"}",
+			"",
+			"const styles = StyleSheet.create({",
+			"    container:{",
+			"        ",
+			"    }",
+			"})"
 		],
 		"description": "Log output to console"
 	}
