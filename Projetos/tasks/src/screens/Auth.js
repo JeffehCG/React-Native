@@ -7,11 +7,12 @@ import AuthInput from '../components/AuthInput'
 
 import axios from 'axios'
 import { server, showError, showSuccess } from '../common'
+import AsyncStorage from "@react-native-community/async-storage"
 
 const initialState = {
     name: '',
-    email: 'jeff@gmail.com',
-    password: '123456',
+    email: '',
+    password: '',
     confirmPassword: '',
     stageNew: false
 }
@@ -54,8 +55,9 @@ export default class Auth extends Component {
                 password: this.state.password
             })
 
+            AsyncStorage.setItem('userData', JSON.stringify(res.data))
             axios.defaults.headers.common['Authorization'] = `bearer ${res.data.token}`
-            this.props.navigation.navigate('Home')
+            this.props.navigation.navigate('Home', res.data)
         } catch (e) {
             showError(e)
         }
@@ -103,7 +105,7 @@ export default class Auth extends Component {
                     }
                     <TouchableOpacity onPress={this.signinOrSignup}
                         disabled={!validForm}>
-                        <View style={[styles.button, validForm ? {} : {backgroundColor: '#AAA'}]}>
+                        <View style={[styles.button, validForm ? {} : { backgroundColor: '#AAA' }]}>
                             <Text style={styles.buttonText}>
                                 {this.state.stageNew
                                     ? "Registrar"
